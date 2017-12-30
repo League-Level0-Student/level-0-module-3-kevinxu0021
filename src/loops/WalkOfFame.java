@@ -11,18 +11,37 @@ public class WalkOfFame {
 		Robot rob = new Robot();
 		// 1. Set the X position of the robot so that it starts on the left. 
 		// You also need to show the robot to see the result of this line.
-
+rob.setX(50);
+rob.setSpeed(10);
+		for (int i = 0; i < 5; i++) {
+			rob.setPenWidth(30);
+		
 		// 2. Make the robot draw a star shape. Hint: 144.
-
+			rob.penDown();
+			rob.move(144);
+			rob.turn(144);
+		
 		// 3. Set the size of the star to 30.
-
+			
+		}
 		/** THE CHALLENGE: **/
-		/*
-		 * Make the robot draw a line of stars like this:
-		 * http://bit.ly/walk-of-fame
-		 * 
-		 * Hint: The distance between stars is 50.
-		 */
+		
+		  for (int i = 0; i < 1; i++) {
+			rob.penUp();
+			rob.turn(90);
+			rob.moveTo(10, 225);
+			rob.move(194);
+		  }
+		  for (int i = 0; i < 5; i++) {
+			rob.penDown();
+			rob.move(144);
+			rob.turn(144);
+		  }
+		 // Make the robot draw a line of stars like this:
+		 // http://bit.ly/walk-of-fame
+		  
+		 // Hint: The distance between stars is 50.
+		 //
 
 	}
 
